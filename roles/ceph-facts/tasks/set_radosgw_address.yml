@@ -74,3 +74,4 @@
   when:
     - inventory_hostname in groups.get(rgw_group_name, [])
     - rgw_multisite | bool
+    - hostvars[item]["rgw_multisite"] | bool
